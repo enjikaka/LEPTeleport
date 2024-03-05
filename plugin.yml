@@ -1,0 +1,27 @@
+name: LEPTeleport
+main: se.enji.lep.Teleport
+author: enjikaka
+website: http://enji.se
+version: 0.2
+
+commands:
+    tphere:
+        description: Teleport a player to you.
+        usage: Type /<command> <player> to teleport a player to you.
+        permission: lep.teleport.here
+    tptoggle:
+        description: Turn on or off ability to teleport
+        usage: Type /<command> to teleport.
+        permission: lep.teleport.*
+    tp:
+        description: Teleport to a player.
+        usage: Type /<command> <player> to teleport.
+        permission: lep.teleport.*
+
+permissions:
+    lep.teleport.*:
+        description: Gives access to all Teleport commands.
+    lep.teleport:
+        description: Gives access to all tp and tptoggle.
+    lep.teleport.here:
+        description: Gives access to the tphere command.
